@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimelyn Via Villabeto — Activity 2</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 24px;
+        line-height: 1.6;
+        color: #222;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 8px;
+      }
+      header h1 {
+        margin-bottom: 4px;
+      }
+      header p {
+        color: #666;
+        margin-top: 0;
+      }
+      h2 {
+        margin-top: 56px;
+        color: #2e6da4;
+        border-bottom: none;
+        padding-bottom: 4px;
+      }
+      nav ul {
+        display: flex;
+        gap: 18px;
+        list-style: none;
+        padding: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      nav a {
+        text-decoration: none;
+        color: #2e6da4;
+        font-weight: bold;
+      }
+            .gallery {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+
+      .gallery img {
+        border-radius: 6px;
+        display: block;
+      }
+
+      figure {
+        margin: 0;
+      }
+
+      figcaption {
+        font-style: italic;
+        color: #555;
+        margin-top: 6px;
+        font-size: 0.9em;
+        max-width: 260px;
+      }
+      code,
+      pre {
+        background: #f4f4f4;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+      pre {
+        padding: 12px;
+        overflow-x: auto;
+      }
+      blockquote {
+        border-left: 4px solid #f3f5f7;
+        margin: 16px 0;
+        padding: 8px 16px;
+        background: #f9f9f9;
+        color: #444;
+      }
+      mark {
+        background: #fff59d;
+      }
+      ul#skills-list {
+        columns: 2;
+      }
+      footer {
+        margin-top: 60px;
+        text-align: center;
+        color: #777;
+        font-size: 0.9em;
+      }
+      .back-to-top {
+        display: inline-block;
+        margin-top: 12px;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="main-heading">Dimelyn Via Villabeto</h1>
+      <p>Web Designer &amp; Front-End Developer</p>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#images-section">Images</a></li>
+          <li><a href="#hyperlinks-section">Links</a></li>
+          <li><a href="#multimedia-section">Video</a></li>
+          <li><a href="#tags-section">Tags</a></li>
+          <li><a href="#dom-section">Behind the Code</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2 id="images-section">Images</h2>
+    <p>A few recent projects I've worked on:</p>
+
+    <div class="gallery">
+      <img
+        src="images/V.jpg"
+        alt="Brand identity design project featuring a custom logo and color palette"
+        width="260"
+      />
+
+      <figure id="figure-photo2">
+  <img
+    src="images/D.jpg"
+    alt="Mobile app UI design showing a clean navigation layout"
+    width="260"
+    height="163"
+  />
+  <figcaption>
+    I am interested in working on web app UI concept designed for a local coffee shop's ordering app.
+  </figcaption>
+</figure>
+
+      <img
+        src="images/2021.jpg"
+        alt="Personal portfolio website build shown on a laptop screen"
+        width="260"
+      />
+    </div>
+
+    <h2 id="hyperlinks-section">Hyperlinks</h2>
+    <ul>
+      <li><a href="#dom-section">See how this site is built</a></li>
+      <li>
+        <a
+          href="https://www.facebook.com/via.villabeto"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Browse my HTML</a
+        >
+      </li>
+      <li>
+        <a href="mailto:viavillabeto@gmail.com">Email me a project brief</a>
+      </li>
+      <li><a href="#tags-section">Jump to my skills</a></li>
+    </ul>
+
+    <h2 id="multimedia-section">Multimedia</h2>
+
+    <h3>Intro clip</h3>
+    <audio controls id="sample-audio">
+      <source src="media/JKBTS Euphoria.mp3" type="audio/mpeg" />
+      <a href="media/sample-audio.mp3">Download the audio intro</a>
+    </audio>
+
+    <h3>Showreel</h3>
+    <video controls width="480" id="sample-video">
+      <source src="media/viabkb.mp4" type="video/mp4" />
+      <a href="media/viabkb.mp4">Download the showreel</a>
+    </video>
+
+    <h2 id="tags-section">Useful Tags</h2>
+
+    <!-- blockquote sets off a piece of feedback from a past client -->
+    <blockquote>
+      "Ms. Via turned our vague idea into a clean, working site in under three
+      weeks. chars"
+      <br />&mdash; a happy client
+    </blockquote>
+
+    <p>
+      I mostly work with <abbr title="HyperText Markup Language">HTML</abbr>,
+      <abbr title="Cascading Style Sheets">CSS</abbr>, and a bit of
+      <abbr title="JavaScript">JS</abbr> when a page needs interactivity.
+    </p>
+
+    <p>
+      Right now I'm especially interested in <mark>accessible</mark> and
+      <mark>responsive</mark> design.
+    </p>
+
+    <p>A snippet from a recent build:</p>
+    <pre><code>&lt;nav id="main-nav"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#work"&gt;Work&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+    <ul id="skills-list">
+      <li>HTML &amp; CSS</li>
+      <li>Responsive layouts</li>
+      <li>Git &amp; GitHub</li>
+      <li>UI prototyping</li>
+    </ul>
+    
+
+    <h2 id="dom-section">Behind the Code</h2>
+    <p>
+      This site is plain HTML — no frameworks. Every tag on the page becomes a
+      node in the browser's DOM tree, and the way those nodes nest as parents
+      and children is what DevTools shows in the Elements panel.
+    </p>
+
+    <img
+      src="images/dom-tree1.png"
+      alt="Screenshot of the browser DevTools Elements panel showing this page's nested DOM tree"
+      width="600"
+    />
+    <img
+      src="images/dom-tree2.png"
+      alt="Screenshot of the browser DevTools Elements panel showing this page's nested DOM tree"
+      width="600"
+    />
+
+    <a class="back-to-top" href="#main-heading">Back to top &uarr;</a>
+
+    <footer>
+      <p>
+        Dimelyn Via Villabeto &middot;
+        <a href="mailto:viavillabeto@gmail.com">viavillabeto@gmail.com</a>
+        <p>&copy; 2026 Dimelyn Via Villabeto. All rights reserved.</p>
+      </p>
+    </footer>
+
+    <!--
+    In this page's DOM tree, the <body> element is the top-level parent that contains every
+    section, including both <h2 id="images-section"> and <h2 id="dom-section">. Inside the Images
+    section, the <figure id="figure-photo2"> element is the direct parent of two children: the
+    <img> showing the mobile app UI and the <figcaption> describing it, so both sit nested one
+    level inside the same figure box. The <ul id="skills-list"> element is likewise the parent of
+    four <li> children, each holding one skill, so expanding that node in DevTools reveals its
+    four <li> children underneath it. Finally, <nav id="main-nav"> is the parent of a single <ul>,
+    which is itself the parent of five <li> elements, each containing one <a> link — a three-level
+    nesting (nav > ul > li > a) that was clearly visible in the Elements panel screenshot.
+  --></body>
+</html>
