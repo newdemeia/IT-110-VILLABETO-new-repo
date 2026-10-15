@@ -1,0 +1,155 @@
+/*Reset*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+  color: black;
+  padding: 20px;
+}
+/*The second h1 rule wins because it comes last.*/
+h1 {
+  color: orange;
+}
+
+h1 {
+  color: blue;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Header and footer */
+header, footer {
+  background-color: lightblue;
+  text-align: center;
+  padding: 1px;
+  border: 1px solid black;
+  margin: 5px auto;
+}
+
+/*Layout Components*/
+/* Navigation */
+nav a {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  padding: 8px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: orange;
+}
+
+/* Cards */
+.card {
+  width: 500px;
+  max-width: 100%;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+/*Typography*/
+/* About card */
+#about {
+  position: relative;
+  border-color: orange;
+}
+
+/* Small badge right top of About Me */
+#about::after {
+  content: "ABOUT";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: orange;
+  color: white;
+  padding: 3px;
+  font-size: 10px;
+}
+
+/* Introduction */
+.intro {
+  color: rgb(0, 183, 255);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.intro::first-letter {
+  color: rgb(255, 0, 157);
+}
+
+/* Paragraphs inside cards */
+.card p {
+  margin-bottom: 10px;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skills-list > li {
+  background-color: lightblue;
+  padding: 8px;
+  list-style-position: inside;
+  font-size: 13px;
+}
+
+/* Hide paragraphs */
+.hide-none {
+  display: none;
+}
+
+.hide-visibility {
+  visibility: hidden;
+}
+
+/* display: none removes the space.
+   visibility: hidden keeps the space. */
+
+/* Hobbies scrollbar */
+.scroll-box {
+  height: 180px;
+  overflow: auto;
+}
+
+/* Card width: 500px total.
+   Content width = 500 - 40px padding - 4px border = 456px. */
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  color: rgb(50, 50, 50);
+}
+
+/*Reflection Questions
+
+1.  In your own words, why did one of your two conflicting rules win in Part A? (Think specificity and
+order.)
+---->The second h1 rule won because both rules have the same priority, 
+    but the second one was written later in the CSS. 
+    The browser follows the last rule when both have the same priority.
+
+2. What is the rendered width of one .card if box-sizing were content-box instead of border-box?
+Show your computation.
+---->If box-sizing were content-box, the total width would be 500px + 40px padding + 4px border = 544px.
+    The padding and border are added to the original width of the card.
+
+3. When would you choose visibility: hidden instead of display: none?
+---->I would use visibility: hidden when I want to hide something but keep its space on the page. 
+    Unlike display: none, it does not move the other elements around.*/
